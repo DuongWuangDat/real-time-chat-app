@@ -19,4 +19,4 @@ mongoose.connect(process.env.ATLAS_URI).then(()=> {
 
 app.use(morgan('dev'))
 app.use(express.json())
-app.use(userRoute)
+app.use('/api/user',userRoute)
